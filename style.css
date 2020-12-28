@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #e1e2e7;
+    position: relative;
+    font-size: 18px;
+    background: #f5f5f7;
+}
+
+.header__back-link {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #2f8afe;
+}
+
+.heading {
+    font-weight: 500;
+}
+
+.wrapper {}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: none;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 160px;
+    border-radius: 20px;
+    background: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #c8c8c8;
+}
+
+.popup.visible {
+    display: flex;
+}
+
+.popup__heading {
+    height: 18px;
+    font-weight: 600;
+    color: #131313;
+    margin-top: 35px;
+}
+
+.popup__desc {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #242424;
+}
+
+.popup-btn__wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #f2f2f2;
+    display: flex;
+}
+
+.popup__btn {
+    width: 50%;
+    background: none;
+    color: #30629f;
+    font-size: 18px;
+    border: none;
+    height: 40px;
+    transition: background-color .3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup__btn.oneBtn {
+    width: 100%;
+    border: none !important;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__btn:hover {
+    background: #f2f2f2;
+}
+
+.popup__btn:nth-of-type(1) {
+    border-radius: 0 0 0 20px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.popup__btn:nth-of-type(2) {
+    border-radius: 0 0 20px 0;
+    border-left: 1px solid #f2f2f2;
+}
+
+.shadow__popup {
+    display: none;
+    background: #000;
+    opacity: .4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.shadow__popup.visible {
+    display: block;
+}
+
+.firstScreen,
+.secondScreen,
+.thirdScreen {
+    height: 100vh;
+    background: #fefffe;
+}
+
+.firstScreen {}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    margin: 100px auto 0 auto;
+    color: #5c5c5d;
+}
+
+.loader.rotate img {
+    animation: rotateLoader 2s linear;
+}
+
+@keyframes rotateLoader {
+    from { transform: rotate(0); }
+    to { transform: rotate(720deg); }
+}
+
+
+.loader img {
+    width: 15px;
+    height: 15px;
+}
+
+.secondScreen {}
+
+.secondScreen .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.secondScreen__block {
+    text-align: center;
+}
+
+.secondScreen__block img {
+    width: 20vw;
+    margin-bottom: 40px;
+}
+
+.secondScreen-loader {
+    width: 260px;
+    height: 7px;
+    background: #bfbfbf;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.secondScreen-loader .loaderLine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #212121;
+    border-radius: 5px 0 0 5px;
+    height: 7px;
+    width: 0;
+    transition: width 4s;
+}
+
+.secondScreen-loader.runLoader .loaderLine {
+    width: 100%;
+}
+
+.thirdScreen {}
+
+@media (max-width: 340px) {
+    .heading {
+        font-size: 16px;
+    }
+    .header__back-link {
+        font-size: 14px;
+    }
+}
