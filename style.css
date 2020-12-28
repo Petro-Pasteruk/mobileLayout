@@ -189,9 +189,9 @@ body {
 
 .secondScreen-loader {
     width: 260px;
-    height: 7px;
+    height: 5px;
     background: #bfbfbf;
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
     position: relative;
 }
@@ -200,8 +200,8 @@ body {
     left: 0;
     top: 0;
     background: #212121;
-    border-radius: 5px 0 0 5px;
-    height: 7px;
+    border-radius: 4px 0 0 4px;
+    height: 5px;
     width: 0;
     transition: width 4s;
 }
