@@ -9,7 +9,7 @@
 //
 // firstScreenLoader.classList.add("rotate");
 // setTimeout(() => {
-//     firstScreenLoader.style.display = "none";
+// firstScreenLoader.classList.remove("rotate");
 //     firstScreenPopup.classList.add("visible");
 //     firstScreenPopupShadow.classList.add("visible");
 // }, 2000);
