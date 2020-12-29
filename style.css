@@ -194,11 +194,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -60%);
 }
 
 .secondScreen__block img {
-    width: 85px;
+    width: 70px;
     margin-bottom: 40px;
 }
 
