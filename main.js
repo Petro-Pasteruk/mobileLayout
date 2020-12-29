@@ -1,7 +1,6 @@
 let
     firstScreen = document.querySelector(".firstScreen"),
     secondScreen = document.querySelector(".secondScreen"),
-    thirdScreen = document.querySelector(".thirdScreen"),
     firstScreenLoader = document.querySelector(".loader"),
     firstScreenPopup = document.querySelector(".firstScreen .popup"),
     firstScreenPopupShadow = document.querySelector(".firstScreen .shadow__popup"),
@@ -21,9 +20,9 @@ function firstScreenBtnListener () {
         secondScreenLoader.classList.add("runLoader");
     }, 300);
     setTimeout(() => {
-        secondScreen.classList.add("hidden");
-        thirdScreen.classList.remove("hidden");
-    }, 4000);
+        document.querySelector(".secondScreen .popup").classList.add("visible");
+        document.querySelector(".secondScreen .shadow__popup").classList.add("visible");
+    }, 6100);
 }
 
 document.querySelector(".firstScreen .popup-btn__wrap > button:nth-child(1)").addEventListener("click", firstScreenBtnListener);
