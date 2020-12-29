@@ -122,12 +122,12 @@ body {
 .popup__btn:nth-of-type(1) {
     border-radius: 0 0 0 20px;
     border-right: 1px solid #f2f2f2;
-    font-weight: 600;
 }
 
 .popup__btn:nth-of-type(2) {
     border-radius: 0 0 20px 0;
     border-left: 1px solid #f2f2f2;
+    font-weight: 600;
 }
 
 .shadow__popup {
