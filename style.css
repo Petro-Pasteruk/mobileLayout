@@ -198,12 +198,12 @@ body {
 }
 
 .secondScreen__block img {
-    width: 100px;
+    width: 85px;
     margin-bottom: 40px;
 }
 
 .secondScreen-loader {
-    width: 260px;
+    width: 220px;
     height: 5px;
     background: #bfbfbf;
     border-radius: 4px;
