@@ -186,18 +186,19 @@ body {
 .secondScreen {}
 
 .secondScreen .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
 .secondScreen__block {
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
 
 .secondScreen__block img {
-    width: 20vw;
+    width: 100px;
     margin-bottom: 40px;
 }
 
